@@ -1,0 +1,13 @@
+iniciando o modulo 
+go mod init nome do modulo
+
+sintaxe de inicialização de modulos: go mod init github.com/eneassena/nome-do-module
+
+baixar modulos 
+go get -u
+
+-u é uma flag para updade isso atualizará a versão mais atual do modulo que será baixado
+
+
+encontrando pacotes go para aplicação
+disponível em: https://pkg.go.dev/

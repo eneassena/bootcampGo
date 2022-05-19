@@ -1,0 +1,18 @@
+Conteúdo BootCamp Golang
+
+Texto
+psum dolor sit amet, consectetur adipiscing elit. Duis cursus vitae tortor nec volutpat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc ac neque enim. Phasellus auctor auctor metus, scelerisque dapibus lectus maximus vel. Etiam feugiat, purus a interdum fringilla, dui lorem suscipit turpis, nec volutpat lacus massa ut nisl. Sed erat nibh, dapibus non sodales at, elementum id dui. Nunc aliquam id elit at dapibus. Donec aliquam, lorem in iaculis euismod, turpis urna fringilla massa, mollis interdum metus purus eget erat. Donec tortor leo, iaculis ac convallis sit amet, feugiat ac elit. Proin cursus mi nec augue euismod, quis tincidunt risus pellentesque. Etiam quis nisl imperdiet lacus porta fringilla sollicitudin sit amet augue. Morbi ultrices odio nulla.
+
+
+Conflito aqui
+ Pellentesque efficitur mollis blandit. Donec convallis, arcu eu consequat lacinia, est erat semper urna, nec venenatis ipsum tellus sed nibh
+
+ 
+Teste Mudando este conteúdo isso deve ferar um conflito
+
+
+
+Teste 
+
+Gerando um conflito para o Eneas 
+testando chave ssh

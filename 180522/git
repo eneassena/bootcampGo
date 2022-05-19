@@ -1,0 +1,68 @@
+ver configuração global
+git config --list
+
+ver configuração do git
+git config
+
+
+
+desenvolvedoreneas2000@gmail.com
+token de auth github
+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
+
+
+vendo todas branchs
+git branch -a
+
+criar branch
+git branch teste
+
+muda para branch main/ comando checkout serve para reverter mudanças no arquivos
+git checkout main
+
+criar e muda branch
+git checkout -b teste
+
+para remove a branch
+git branch -D teste
+
+
+essa extensão é usada para ver as mudanças no repositorio
+extensão git lens
+
+adicionar repositorio remotos e removendo
+git remote remove origin
+git remote add origin
+
+
+push usando https
+git push https master
+
+
+git init
+git log
+git branch
+git checkout
+git status
+git merge
+git stash
+git cherry pick
+git bisec
+git (squash)
+
+
+bvb-xkrr-dko
+https://meet.google.com/bvb-xkrr-dko
+
+Fluxo de trabalho gitflow
+https://www.atlassian.com/br/git/tutorials/comparing-workflows/gitflow-workflow
+
+repositorio do projeto botcamp
+https://github.com/cyruzin/bootcamp
+
+
+branch chega no release essa
+
+
+
+
