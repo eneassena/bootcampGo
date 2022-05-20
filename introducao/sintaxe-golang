@@ -11,3 +11,75 @@ go get -u
 
 encontrando pacotes go para aplicação
 disponível em: https://pkg.go.dev/
+
+
+declaração de variavel 
+var nome string
+var horas int
+horas = 20
+
+atribuições
+produto,preco := "Eneas", 10.5
+var (
+	produto = "curso"
+	quantidade = 25
+)
+
+gerenciamento de projeto go
+sempre que for iniciar um projeto go usamos o comando
+go mod init nome do repositorio que armazenará o projeto
+
+para permitir que uma função seja chama fora do pacote que ela foi definida o nome da função deve começa com a primeira letra maiuscula
+
+
+o caminho do pacote smepre soa absolutos na chamada das funcões
+
+
+material em bit a bit compatinhado pelo professo de golang mercadolivre
+https://github.com/cyruzin/c-study/tree/master/Bitwise
+
+exemplos de código em go
+http://goporexemplo.golangbr.org/
+
+
+em criação de arrray o slace quando não é passado o tamanho do array o tamanho é medido de forma dinamica
+
+
+diferença entre array e slices o slices consegue crescer dinamicamente e array não
+
+
+maps
+var studentes = map[string]int{"João": 20, "Pedro": 26}
+make(map[string]int)
+
+removendo chaves do map
+delete(students, "João")
+
+
+
+
+
+repositório do professor golang
+https://github.com/cyruzin/golang-study
+
+análisar os comando fmt
+fmt.Sprintf
+
+
+
+
+
+
+
+
+
+na aula amanhã será o grupo de 3 colaborador alunos
+
+cada grupo deve criar uma sala
+
+
+
+
+
+
+

@@ -2,7 +2,11 @@
 package introducao
 
 // importe dos pacote externos
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/eneassena/bootcampGo/190522/exercicios"
+)
 
 var idade int = 25
 
@@ -30,6 +34,22 @@ func Introducao() {
 
 	fmt.Println("\nconstantes")
 	fmt.Println(idade1, idade2, idade3)
+
+	exercicios.Exercicio8()
+
+	exercicios.Exercicio1()
+	exercicios.Exercicio2()
+	exercicios.Excercios3()
+	exercicios.Exercicio4()
+
+	// exemplo de ponteiro em Go
+	// var idade int = 10
+	// var p *int
+
+	// p = &idade
+
+	// fmt.Println(&p) // retorna o endereco me memoria da variavel
+	// fmt.Println(*p) // retorna o valor da variavel na momeria
 }
 
 func ArraySintaxe() {
@@ -145,6 +165,5 @@ func switchCase() {
 		fmt.Println("Dezembro")
 	default:
 		fmt.Println("Desconhecido")
-
 	}
 }

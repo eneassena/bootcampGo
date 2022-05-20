@@ -2,7 +2,7 @@ package exercicios
 
 import "fmt"
 
-func Excercios3() {
+func Exercicio3() {
 	// var 1nome string - nome da variavel começou com um numero
 	var sobrenome string
 	// var int idade - ordem deve ser nomeDaVariavel e depois o tipo
