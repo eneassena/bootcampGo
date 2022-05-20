@@ -39,7 +39,7 @@ func Introducao() {
 
 	exercicios.Exercicio1()
 	exercicios.Exercicio2()
-	exercicios.Excercios3()
+	exercicios.Exercicio3()
 	exercicios.Exercicio4()
 
 	// exemplo de ponteiro em Go
