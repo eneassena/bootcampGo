@@ -62,13 +62,13 @@ type Ecommerce interface {
 	Adicionar(produto Produto)
 }
 
-func (p Produto) CalcularCusto() float64 {
+func (p *Produto) CalcularCusto() float64 {
 	switch p.tipo {
 	case "Medio":
-		acescimo := p.preco * (p.preco * 0.03)
+		acescimo := (p.preco * 0.03)
 		p.preco += acescimo
 	case "Grande":
-		acescimo := p.preco * (p.preco * 0.06)
+		acescimo := (p.preco * 0.06)
 		p.preco += acescimo + 2500
 	}
 	return p.preco
@@ -95,21 +95,19 @@ func novaLoja() Ecommerce {
 }
 
 func TestStruct() {
+	Mercado := novaLoja()
 
 	produtoPequeno := novoProduto("Pequeno", "carderno", 45.00)
 	produtoMedio := novoProduto("Medio", "Livro", 150.00)
 	produtoGrande := novoProduto("Grande", "Teclado", 80.00)
-
-	Mercado := novaLoja()
 
 	Mercado.Adicionar(produtoPequeno)
 	Mercado.Adicionar(produtoMedio)
 	Mercado.Adicionar(produtoGrande)
 
 	var tot = Mercado.Total()
-	fmt.Println(tot)
+	fmt.Println("Total", tot)
 	fmt.Println(produtoPequeno.CalcularCusto())
 	fmt.Println(produtoMedio.CalcularCusto())
 	fmt.Println(produtoGrande.CalcularCusto())
-
 }
