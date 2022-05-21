@@ -3,58 +3,55 @@ package main
 import (
 	"fmt"
 
-	"github.com/eneassena/bootcampGo/200522/pratica"
+	"github.com/eneassena/bootcampGo/200522/exercicio"
+)
+
+const (
+	GATO      = "gato"
+	CAES      = "caes"
+	HAMSTER   = "hamster"
+	TARANTULA = "tarantula"
 )
 
 func main() {
 
-	// fmt.Println("hello, World! :)")
+	// Exercicio 4
+	minimo := exercicio.ExecFunctions("Menor")
+	maximo := exercicio.ExecFunctions("Maior")
+	media := exercicio.ExecFunctions("Media")
 
-	Subtra := pratica.Operator("Subtra")
-	fmt.Println(Subtra(10, 3))
+	fmt.Println("Menor dos valor da entra: [10, 4, 5, 6, 7, 8, 9, 56, 4, 34, -45, 2, 3]")
+	fmt.Println(minimo(10, 4, 5, 6, 7, 8, 9, 56, 4, 34, -45, 2, 3))
 
-	// s, m, d, err := pratica.RetornoMultiplo(5, 5)
-	// fmt.Printf("a soma eh = %v\te a multiplicação = %v\t Divisão = %v\tError = %v\n", s, m, d, err)
+	fmt.Println("\nMaior dos valor da entra: [10, 4, 5, 6, 7, 8, 9, 56, 4, 34, -45, 2, 3]")
+	fmt.Println(maximo(10, 4, 5, 6, 7, 8, 9, 56, 4, 34, -45, 2, 3))
 
-	// res := pratica.AumuladorSoma(1, 2, 3, 4, 5, 6, 7, 8, 9)
-	// fmt.Println(res)
+	fmt.Println("\nMédia dos valor da entra: [3, 3, 3]")
+	fmt.Println(media(3, 3, 3))
 
-	// stundents := map[string]int{"caio": 32, "Brenda": 12}
+	// Exercicio 5
+	var amount int
 
-	// for k, v := range stundents {
-	// 	fmt.Printf("%v - %v\n", k, v)
-	// }
+	// animalGato, msgGato := exercicio.Animal("chani") // retorna uma mensagem de erro
+	animalGato, msgGato := exercicio.Animal(GATO) // retorna a função do animal Gato corretamente
+	animalCaes, msgCaes := exercicio.Animal(CAES)
+	animalHamster, msgHamster := exercicio.Animal(HAMSTER)
+	animalTarantula, msgTarantula := exercicio.Animal(TARANTULA)
 
-	// myMap := map[string]int{}
-	// myMap := make(map[string]int)
+	if animalGato != nil {
+		amount += animalGato(5)
+	}
+	amount += animalCaes(3)
+	amount += animalHamster(8)
+	amount += animalTarantula(4)
 
-	// fmt.Println(len(myMap))
+	if msgCaes != nil || msgGato != nil || msgHamster != nil || msgTarantula != nil {
+		fmt.Println("Mensagem pro animal Gato", msgGato)
+		fmt.Println("Mensagem pro animal Gato", msgCaes)
+		fmt.Println("Mensagem pro animal Hamster", msgHamster)
+		fmt.Println("Mensagem pro animal Tarantula", msgTarantula)
+	}
 
-	// var nomes [2]string
-	// var idades [2]int
-
-	// var nomes2 = make([]string, 2)
-
-	// nomes[0] = "Eneas"
-	// nomes[1] = "Mathues"
-	// nomes2[0] = nomes[0]
-	// nomes2[1] = nomes[1]
-
-	// idades[0] = 35
-	// idades[1] = 33
-
-	// fmt.Printf("aluno 1: %s %v\n", nomes2[0], idades[0])
-	// fmt.Printf("aluno 2: %s %v\n", nomes2[1], idades[1])
-
-	// a := make([]int, 5)
-	// a = append(a, 85)
-
-	// fmt.Println(len(a), a[5])
-	// var status = []bool{true, false}
-	// fmt.Println(status[0])
-	// fmt.Println(status[1])
-
-	// var alunos = make(map[string]int{"Eneas": 35, "Matheus": 33}, 2)
-	// fmt.Println(alunos)
+	fmt.Println("o total de alimento será de = ", amount)
 
 }

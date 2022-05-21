@@ -41,20 +41,20 @@ gerenciamento de projeto go
 sempre que for iniciar um projeto go usamos o comando
 go mod init nome do repositorio que armazenará o projeto
 
-para permitir que uma função seja chama fora do pacote que ela foi definida o nome da função deve começa com a primeira letra maiuscula
+para permitir que uma função seja chamada fora do pacote que ela foi definida o nome da função deve começa com a primeira letra maiúscula
 
 
-o caminho do pacote smepre soa absolutos na chamada das funcões
+o caminho do pacote sempre será absolutos no import
 
 
-material em bit a bit compatinhado pelo professo de golang mercadolivre
+material em bit a bit compatinhado pelo professo de golang Bootcamp
 https://github.com/cyruzin/c-study/tree/master/Bitwise
 
 exemplos de código em go
 http://goporexemplo.golangbr.org/
 
 
-em criação de arrray o slace quando não é passado o tamanho do array o tamanho é medido de forma dinamica
+em criação de array o slace quando não é passado o tamanho do array o tamanho é medido de forma dinamica
 
 
 diferença entre array e slices o slices consegue crescer dinamicamente e array não
@@ -75,20 +75,4 @@ análisar os comando fmt
 fmt.Sprintf
 
 
-
-
-
-
-
-
-
-na aula amanhã será o grupo de 3 colaborador alunos
-
-cada grupo deve criar uma sala
-
-
-
-
-
-
-
+ 
