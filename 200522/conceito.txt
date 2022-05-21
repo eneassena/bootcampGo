@@ -1,0 +1,37 @@
+
+Entrada de dados do telcado
+fmt.Scan(&variavel)
+
+pesquisar mais sobre ellipsis
+essa tecnica é semelhante ao * no python
+*args recebe uma tupla de paramentros
+exemplo args=(4,5,26,8,56,6)
+
+
+para tratar erros usamos o pacote do go chamado errors é necessário importa o pacote
+
+
+codigo em golang ferramenta criada pelo professor
+https://github.com/cyruzin/trailer
+
+responder pesquisa digitalhouse
+
+
+categoria = 1500
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

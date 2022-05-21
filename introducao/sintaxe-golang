@@ -12,6 +12,18 @@ go get -u
 encontrando pacotes go para aplicação
 disponível em: https://pkg.go.dev/
 
+nomeclatura de variaveis
+- Seu nome deve começar com uma letra, não pode começar com um número
+
+- Os nomes das variáveis não pode conter espaços
+
+Se o nome de uma variável começa com uma letra minúscula, ela só poderá ser acessada dentro do pacote atual e serão consideradas como variáveis não exportadas.
+
+Se o nome da variável começar com letra maiúscula, ela poderá ser acessada por outros pacotes e serão consideradas como variáveis exportas.
+
+Se o nome for formado por váriais palavras, deve-se utilizar a nomeclatura camelcase, cada palavra depois da primeira deve ter primeira deve ter a primeira letra em maiúscula como: empName, EmpAddress, etc.
+
+
 
 declaração de variavel 
 var nome string
@@ -50,13 +62,10 @@ diferença entre array e slices o slices consegue crescer dinamicamente e array 
 
 maps
 var studentes = map[string]int{"João": 20, "Pedro": 26}
-make(map[string]int)
+var students = make(map[string]int)
 
 removendo chaves do map
 delete(students, "João")
-
-
-
 
 
 repositório do professor golang
