@@ -1,10 +1,14 @@
 package main
 
-import "github.com/eneassena/bootcampGo/200522/exercicio"
+import (
+	"fmt"
+	"github.com/eneassena/bootcampGo/200522/exercicio"
+)
 
 func main() {
 
 	exercicio.TestStruct()
+	fmt.Print(1231)
 
 	// l := pratica.ListaHeterogenea{}
 	// l.Data = append(l.Data, 1)
