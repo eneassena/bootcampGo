@@ -1,4 +1,4 @@
-package exercicio
+package tarefas
 
 import "fmt"
 
@@ -51,7 +51,8 @@ func (u *Usuarios) setSenha(senha string) {
 }
 
 func (u *Usuarios) show() string {
-	return fmt.Sprintf("Nome: %s\tSobrenome: %s\tIdade: %v\tEmail: %s\tSenha: %s\n", u.Nome, u.Sobrenome, u.Idade, u.Email, u.Senha)
+	return fmt.Sprintf("Nome: %s\tSobrenome: %s\tIdade: %v\tEmail: %s\tSenha: %s\n",
+		u.Nome, u.Sobrenome, u.Idade, u.Email, u.Senha)
 }
 
 func Play() {
@@ -62,7 +63,13 @@ func Play() {
 	carlos.setSenha("SDFS_hj465413")
 	fmt.Println(carlos.show())
 
-	marcelo := Usuarios{Nome: "Marcelo", Sobrenome: "Santos", Idade: 35, Email: "marcelo@mail.com", Senha: "123456"}
+	marcelo := Usuarios{ 
+		Nome: "Marcelo", 
+		Sobrenome: "Santos", 
+		Idade: 35, 
+		Email: "marcelo@mail.com", 
+		Senha: "123456",
+	}
 	marcelo.show()
 
 	prod := novoProduto("Caderno", 65, 5)
