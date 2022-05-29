@@ -1,10 +1,13 @@
 package main
 
-import "github.com/eneassena/bootcampGo/modulo2/240522/pratica"
+import (
+ 
+	tarefas "github.com/eneassena/bootcampGo/modulo2/260522/exercicio"
+)
 
  
-
-
- func main() {
-	pratica.Ok()
+ 
+func main() {
+ 	tarefas.ExecuteEmpresaNacional()
 }
+

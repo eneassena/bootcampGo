@@ -13,24 +13,27 @@ type Usuarios struct {
 
 type Produto struct {
 	Nome       string
-	Preco      float64
+	Preco      int
 	Quantidade int
 }
 
-func novoProduto(nome string, preco float64, quantidade int) Produto {
+// função de Novo Produtos
+func novoProduto(nome string, preco int, quantidade int) Produto {
 	return Produto{Nome: nome, Preco: preco, Quantidade: quantidade}
 }
 
-func (u *Usuarios) addProduto(produto Produto) {
-	u.produtos = append(u.produtos, produto)
+// Função de adicionar produto
+func addProduto(user Usuarios, produto Produto) {
+	user.produtos = append(user.produtos, produto)
 }
 
-func (u *Usuarios) deleteProduto(user Usuarios) {
-	if len(u.produtos) == 0 {
+// função deletar produto
+func deleteProduto(user Usuarios) {
+	if len(user.produtos) == 0 {
 		fmt.Println("Nao foi possive remover os produtos")
 	}
 	fmt.Println("Produto removido com sucesso")
-	u.produtos = []Produto{}
+	user.produtos = []Produto{}
 }
 
 func (u *Usuarios) setFullName(nome string, sobrenome string) {
@@ -63,26 +66,25 @@ func Play() {
 	carlos.setSenha("SDFS_hj465413")
 	fmt.Println(carlos.show())
 
-	marcelo := Usuarios{ 
-		Nome: "Marcelo", 
-		Sobrenome: "Santos", 
-		Idade: 35, 
-		Email: "marcelo@mail.com", 
-		Senha: "123456",
+	marcelo := Usuarios{
+		Nome:      "Marcelo",
+		Sobrenome: "Santos",
+		Idade:     35,
+		Email:     "marcelo@mail.com",
+		Senha:     "123456",
 	}
 	marcelo.show()
 
 	prod := novoProduto("Caderno", 65, 5)
-	carlos.addProduto(prod)
+	addProduto(carlos, prod)
 	prod = novoProduto("Tablet", 500, 85)
-	carlos.addProduto(prod)
+	addProduto(carlos, prod)
 
 	fmt.Println("Removendo produtos do carlos")
-	carlos.deleteProduto(carlos)
+	deleteProduto(carlos)
 	fmt.Println(carlos.produtos)
 
 	fmt.Println("Removendo produtos do marcelo")
-	marcelo.deleteProduto(marcelo)
+	deleteProduto(marcelo)
 	fmt.Println(marcelo.produtos)
-
 }

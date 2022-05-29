@@ -9,7 +9,6 @@ import (
 	"os"
 )
 
-
 /*
 	Iremos estudar o pacote de erros que possui as funções
 
@@ -51,9 +50,6 @@ import (
 	// criando funções de error
 	func FuncName() (string, error) {
 		return "", nil
-
-
-
 	}
 */
 
@@ -121,7 +117,6 @@ func PlayErrorFormat() {
 	// fmt.Println("error: ", err)
 }
 
-
 type errorPersonalizado interface {
 	Error() (string, error)
 }
@@ -133,7 +128,6 @@ type MyError struct {
 func (m MyError) Error() (string, error) {
 	if len(m.Message) == 0 {
 		return "", errors.New(fmt.Errorf("%s", "error: Campo esta vasio").Error())
-		//return "", fmt.Errorf("%s", "campo esta vasio")
 	}
 	return m.getMessage(), nil
 }
