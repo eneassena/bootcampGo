@@ -1,0 +1,14 @@
+{
+    "product": [
+        {
+            "id": 1,
+            "nome": "Sandalha",
+            "preco": 52.98
+        },
+        {
+            "id": 2,
+            "nome": "Tenis",
+            "preco": 252.98
+        }
+    ]
+}

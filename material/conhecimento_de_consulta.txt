@@ -1,0 +1,8 @@
+links
+1. Go Exemple uso de Contexto: disponivel em -> https://gobyexample.com/context
+2. Códigos HTTP: disonivel em -> https://http.dog/
+3. gestao de erros de servidor usando google: disponivel em -> https://cloud.google.com/error-reporting?hl=pt-br
+4. Documentação Oficial do Gin framework Golang: disponivel em -> https://github.com/gin-gonic/gin
+5. Ferramentas de gerenciamento de errors: disponivel em -> https://blog.mandic.com.br/artigos/as-5-ferramentas-mais-populares-para-gerenciamento-de-log/
+6. 
+

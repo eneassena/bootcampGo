@@ -1,12 +1,41 @@
 package main
- 
+
 import (
-	exec "github.com/eneassena/bootcampGo/modulo2/260522/exercicio"
+	"encoding/json"
+	"fmt"
+	"io/ioutil"
+	"log"
 )
 
+type Field struct {
+	ID int 
+	Name string 
+	Price float64
+}
+
+type Produto struct {
+	field Field
+}
+
+
 func main() {
-	exec.PlayTarefasWithCanal()
-	
+
+	byt, e := ioutil.ReadFile("product.json") 
+	if e != nil {
+		log.Fatal(e)
+	}
+
+	fmt.Println(string(byt))
+
+	var prod Field
+
+
+	if err := json.Unmarshal(byt, &prod); err != nil {
+		log.Fatal(err)
+	}
+
+	fmt.Println(prod)
+
+
 
 }
- 
