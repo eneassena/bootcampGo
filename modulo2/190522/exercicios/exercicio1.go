@@ -4,7 +4,7 @@ import "fmt"
 
 func Exercicio1() {
 	// forma 1
-	nome := "Eliel Sena"
+	nome := "Carlos Sena"
 
 	idade := 27
 

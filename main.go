@@ -1,41 +1,27 @@
 package main
 
 import (
-	"encoding/json"
 	"fmt"
-	"io/ioutil"
-	"log"
+	"testing"
 )
 
-type Field struct {
-	ID int 
-	Name string 
-	Price float64
+
+func Soma(a, b int) int {
+	return a + b
 }
 
-type Produto struct {
-	field Field
+func TestSoma(t *testing.T){
+	result := Soma(5,5)
+	esperado := 10
+
+	if result != esperado {
+		t.Errorf("resultado incorrento espera %d e a função Soma retorno %d", esperado, result)
+	}
+
+
 }
 
 
-func main() {
-
-	byt, e := ioutil.ReadFile("product.json") 
-	if e != nil {
-		log.Fatal(e)
-	}
-
-	fmt.Println(string(byt))
-
-	var prod Field
-
-
-	if err := json.Unmarshal(byt, &prod); err != nil {
-		log.Fatal(err)
-	}
-
-	fmt.Println(prod)
-
-
-
+func main() {  
+	fmt.Println("rodando testes")
 }

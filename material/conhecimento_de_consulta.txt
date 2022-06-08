@@ -4,5 +4,92 @@ links
 3. gestao de erros de servidor usando google: disponivel em -> https://cloud.google.com/error-reporting?hl=pt-br
 4. Documentação Oficial do Gin framework Golang: disponivel em -> https://github.com/gin-gonic/gin
 5. Ferramentas de gerenciamento de errors: disponivel em -> https://blog.mandic.com.br/artigos/as-5-ferramentas-mais-populares-para-gerenciamento-de-log/
-6. 
+6. Estruturando projetos em go: disponivel em -> https://github.com/golang-standards/project-layout
+7. Estruturando projetos em Go dica 2: disponivel em -> https://github.com/golang-standards/project-layout
+8. arquitetura de projeto MSR
+9. convertendo dados em go: disonivel em: https://pkg.go.dev/strconv
+10. tirando espaços da string em golang: disponivel em -> https://linuxhint.com/trim-whitespace-golang/
+11. tirando espaços da string em golang segundo link: disponivel em -> https://www.tutorialkart.com/golang-tutorial/golang-string-trim-space/
+12. converte string para float e float para string: disponivel em -> https://yourbasic.org/golang/convert-string-to-float/
+13. Documentando uma api: disponível em -> https://developers.themoviedb.org/3/tv/get-tv-details
+14. Swagger Documentação de api: disponível em https://swagger.io/
+15. Swag Documentação de API: disponível em ->  https://github.com/swaggo/gin-swagger
+16. Link da documentação do swagger: disponível em -> https://swagger.io/docs/specification/describing-responses/
+17. link de tutorial de test no idioma português: disponivel em -> https://larien.gitbook.io/aprenda-go-com-testes/primeiros-passos-com-go/ola-mundo
+18.
+19.
+20.
+
+
+
+uma estrutura pode ser vinculada a uma função que impementa uma interface  
+esstrutura -> função -> interface 
+
+o uso de interface permite reaproveitar código 
+
+
+
+Arquitetura MSR 
+
+Diretórios
+
+Cmd -> organiza códigos que irão responder as entrada da pai como controladores que responde uma um endpoint específico 
+Cmd/server
+ - main.go
+Cmd/server/controller
+ - aplicacaoController.go
+
+Internal -> camada responsável por organizar os códigos referênte a aplicação si, como regras de negocio, serviços internos da aplicação atual
+Internal/models
+ - modelo.go
+Internal/services
+ - services.go
+internal/repository
+ - repository.go 
+
+
+Middleware
+No framework gin temos 3 formas de implementar
+1. Podemos usar um middleware para todos endpoint
+2. Podemos usar um middlware em um grupo especifico de endpoints
+3. Podemos usar um middlware em im endpoint especifico
+
+Exemplo
+ - router.User(meuMiddlware) para todos
+ - router.User(meuMiddleware).GET("/endpoint", funcHandler) geralmente funciona para todos também
+ - router.GET("/endpoint", meuMiddleware, funcHandler) para um endpoint especifico
+
+
+Parando a execução do middleware usamos a func do ginásio Aborted 
+
+
+
+
+
+Mapeamento de conhecimento aprendido em golang
+Sintaxes esplanadas pelo professor
+* Tipo de dados
+* variáveis
+* constantes
+* estrutura condicionais
+* estrutura repetição
+* funções
+* interfaces
+* estrutura de dados
+* lista/ slices
+
+
+
+
+
+A aplicação será uma api para produtos frescos do mercado livre
+
+
+
+Trabalhando com teste em Golang
+
+
+
+
+
 
