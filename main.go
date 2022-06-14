@@ -2,26 +2,29 @@ package main
 
 import (
 	"fmt"
-	"testing"
+
+	"github.com/go-playground/validator/v10"
 )
 
 
-func Soma(a, b int) int {
-	return a + b
-}
 
-func TestSoma(t *testing.T){
-	result := Soma(5,5)
-	esperado := 10
+type Alunos struct {
+	Name string `json:"name" validate:"required"`
+	Email string `json:"email" validate:"required,uppercase"`
+	Idade string `json:"idade" validate:"required,number"`
+ } 
+ 
+// use a single instance of Validate, it caches struct info
+var validate *validator.Validate
 
-	if result != esperado {
-		t.Errorf("resultado incorrento espera %d e a função Soma retorno %d", esperado, result)
+func main() { 
+	a := Alunos{Name: "Carlos",Email: "carlos@hotmail.com", Idade: "14"}	
+	validate = validator.New()
+	err := validate.Struct(a)
+	if err != nil {
+		if _, ok := err.(*validator.ValidationErrors); ok {
+			fmt.Println(err)
+		}
+		fmt.Println(err)
 	}
-
-
-}
-
-
-func main() {  
-	fmt.Println("rodando testes")
 }
