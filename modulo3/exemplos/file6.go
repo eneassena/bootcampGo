@@ -1,4 +1,5 @@
 package exemplos
+
 /*
 import (
   "log"
@@ -52,4 +53,3 @@ func main() {
 }
 
 */
-

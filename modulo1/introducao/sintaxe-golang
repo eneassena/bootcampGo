@@ -1,78 +1,71 @@
-iniciando o modulo 
-go mod init nome do modulo
+- iniciando o modulo 
+- go mod init nome do modulo
 
-sintaxe de inicialização de modulos: go mod init github.com/eneassena/nome-do-module
+- sintaxe de inicialização de modulos: go mod init github.com/eneassena/nome-do-module
 
-baixar modulos 
-go get -u
+- baixar modulos 
+- go get -u
+ 
+- -u é uma flag para updade isso atualizará a versão mais atual do modulo que será baixado
 
--u é uma flag para updade isso atualizará a versão mais atual do modulo que será baixado
 
+- encontrando pacotes go para aplicação
+- disponível em: https://pkg.go.dev/
 
-encontrando pacotes go para aplicação
-disponível em: https://pkg.go.dev/
-
-nomeclatura de variaveis
+- nomeclatura de variaveis
 - Seu nome deve começar com uma letra, não pode começar com um número
 
 - Os nomes das variáveis não pode conter espaços
 
-Se o nome de uma variável começa com uma letra minúscula, ela só poderá ser acessada dentro do pacote atual e serão consideradas como variáveis não exportadas.
+- Se o nome de uma variável começa com uma letra minúscula, ela só poderá ser acessada dentro do pacote atual
+- e serão consideradas como variáveis não exportadas.
 
-Se o nome da variável começar com letra maiúscula, ela poderá ser acessada por outros pacotes e serão consideradas como variáveis exportas.
+- Se o nome da variável começar com letra maiúscula, ela poderá ser acessada por outros pacotes e serão - consideradas como variáveis exportas.
 
-Se o nome for formado por váriais palavras, deve-se utilizar a nomeclatura camelcase, cada palavra depois da primeira deve ter primeira deve ter a primeira letra em maiúscula como: empName, EmpAddress, etc.
-
-
-
-declaração de variavel 
-var nome string
-var horas int
-horas = 20
-
-atribuições
-produto,preco := "Eneas", 10.5
-var (
-	produto = "curso"
-	quantidade = 25
-)
-
-gerenciamento de projeto go
-sempre que for iniciar um projeto go usamos o comando
-go mod init nome do repositorio que armazenará o projeto
-
-para permitir que uma função seja chamada fora do pacote que ela foi definida o nome da função deve começa com a primeira letra maiúscula
+- Se o nome for formado por váriais palavras, deve-se utilizar a nomeclatura camelcase, cada palavra depois da - primeira deve ter primeira deve ter a primeira letra em maiúscula como: empName, EmpAddress, etc.
 
 
-o caminho do pacote sempre será absolutos no import
+
+- declaração de variavel 
+- var nome string
+- var horas int
+- horas = 20
+
+- atribuições
+- produto,preco := "Eneas", 10.5
+- var (
+-	produto = "curso"
+-	quantidade = 25
+- )
+
+- gerenciamento de projeto go
+- sempre que for iniciar um projeto go usamos o comando
+- go mod init nome do repositorio que armazenará o projeto
+
+- para permitir que uma função seja chamada fora do pacote que ela foi definida o nome da função deve começa com - a primeira letra maiúscula
+
+- o caminho do pacote sempre será absolutos no import
+
+- material em bit a bit compatinhado pelo professo de golang Bootcamp
+- https://github.com/cyruzin/c-study/tree/master/Bitwise
 
 
-material em bit a bit compatinhado pelo professo de golang Bootcamp
-https://github.com/cyruzin/c-study/tree/master/Bitwise
+- exemplos de código em go
+- http://goporexemplo.golangbr.org/
 
-exemplos de código em go
-http://goporexemplo.golangbr.org/
+- em criação de array o slace quando não é passado o tamanho do array o tamanho é medido de forma dinamica
 
+- diferença entre array e slices o slices consegue crescer dinamicamente e array não
 
-em criação de array o slace quando não é passado o tamanho do array o tamanho é medido de forma dinamica
+- maps
+- var studentes = map[string]int{"João": 20, "Pedro": 26}
+- var students = make(map[string]int)
 
+- removendo chaves do map
+- delete(students, "João")
 
-diferença entre array e slices o slices consegue crescer dinamicamente e array não
+- repositório do professor golang
+- https://github.com/cyruzin/golang-study
 
-
-maps
-var studentes = map[string]int{"João": 20, "Pedro": 26}
-var students = make(map[string]int)
-
-removendo chaves do map
-delete(students, "João")
-
-
-repositório do professor golang
-https://github.com/cyruzin/golang-study
-
-análisar os comando fmt
-fmt.Sprintf
-
-
- 
+- análisar os comando fmt
+- fmt.Sprintf
