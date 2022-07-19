@@ -25,7 +25,7 @@ links
 24. Modelagem de Ameaças: disponível em -> https://sites.google.com/mercadolibre.com/websec/threat-modeling?authuser=0
 25. OWASP Top Ten Web Application Security Risks | OWASP: disponível em -> https://owasp.org/www-project-top-ten/
 26. How I learned to stop worrying (mostly) and love my threat model | Ars Technica: disponível em -> https://arstechnica.com/information-technology/2017/07/how-i-learned-to-stop-worrying-mostly-and-love-my-threat-model/
-27. cadastro em plataforma de curso:  disonivel em -> https://mercadolibre.mercadolibre.auth0.com/login?state=hKFo2SAyZzB1d0daNWtiZGtLRGgtaGtRTFlSZjdQaVNCdVp3LaFupWxvZ2luo3RpZNkgaGppWFF1cTJWRHpOajRTcTlabHhTbkdUdUlVR3lFZnqjY2lk2SBzbkozZDUxZnp2a0VpQWZWeVV5cVFYMnh4TmNtNmc2Nw&client=snJ3d51fzvkEiAfVyUyqQX2xxNcm6g67&protocol=samlp&SAMLRequest=fZJfb5swFMXf%2BRTI7wFDEqJaIRJrNi1T12VNWk17M%2BYCTvyH2qYk%2B%2FRTTbs1k1a%2F3ev7O%2Ff4yEtLpehI0btW3cFjD9YFYRiGJymUJf4yR71RRFPLLVFUgiWOkV3x9YakESad0U4zLdA%2F2PsUtRaM41qN2GadI2hFWeuyqaQCrTrguu3qqmTNoVXscFCiok1b0xfiAYzlWuUojTAKRhFre9go66hyOUpxmk5wNsFX%2B2RG8IIkVz9HdA3WcUWdx1vnOkviWIJhtNKClwaii4L2rsUR0zL2acRWfZlW86T%2B9XT8yIv64Xx%2Ffvz%2BIz2dbpnMmmwxLtm%2BxPKBq4qr5v00ynHIks%2F7%2FXay%2FbbbjyLFa0rXWtlegtmBeeIM7u9u3joXPKopg1Lro%2Fc5aHP0ZqOu7dDKSy2fa%2BIjMqtXdBiGS5Jp2VF1jpNsPs2mC5wl89kML5Jl%2FBb%2FK9iRWyphs95qwdnZ95%2FPJ20kdf9%2FcxIlvsOrSe1HCUjKRVFVBqxFf3QKIfRwbYA6yJEzPaAwXgVBMNq5%2FLWr3w%3D%3D&RelayState=AblWt873gyCOQn7rwGHcjqxTCdgU-kEfTrO6Nm5V-56sOgOD9WHz7xy5AQCRlRapD0xAnJNGyxbdCHCX1Qr84NlSvkeJYWiDgD5jdcv68wdPuoh-9pYQJVOFqECs5VZZwM9EGBwREGYpEaUEv_AzWiorQMo4BpIQkYdADhMV6ykL4qO7WAnbvXtAQdBpB_ui3GtHjHF3seBDCfA3fnXTrOqgrmb0cmD0r5EiK1ubiFrBxEuG0SPu7cc4nX2WMRLh8yx7mgjEgDDquTmm_3ZVtEn2wdSk_fkS32ofsqccmCNrAvUql7boJmE2X8HQ3ORMidTU9I4g2cEnqTeZaT1efjWcvcTSX_KjdWq4nEeMgTutO9LSaw36slFOZ1Ap2xWKWjo
+ 
 28. Websec - Capacitaciones & Awareness: disponivel em -> https://sites.google.com/mercadolibre.com/websec/capacitaciones-awareness?authuser=0
 29. Secure Code Warrior disponivel em -> https://portal.securecodewarrior.com/#/register/723808966242
 30. Cómo usar LGTM - Documentos de Google: disonivel em -> https://docs.google.com/document/d/1G7Facqz_HtKdihfC8IRfSQjwyg9-5bTxSMBeoq5cLdM/edit#heading=h.2l66u6snx2st
@@ -33,7 +33,29 @@ links
 32. Input Validation: disponivel em -> https://furydocs.io/sdlc-standards/0.0.9/guide/#/general/Input_Validation
 32. Ferramenta para gera mocks para teste de integração: disponivel em -> https://github.com/vektra/mockery
 32. Documentação no github do testify: disponivel em -> https://github.com/stretchr/testify#mock-package
-32. 
+32. Explain plan- SQL Magazine 79: disponível em -> https://www.devmedia.com.br/explain-plan-sql-magazine-79/18031
+33. Link de guias de código de linguagem go e outras: disponível em -> https://zetcode.com/all/#go
+34. Link de acesso ao banco de dados mysql: disponível em -> https://github.com/go-sql-driver/mysql/
+35. Acesso ao Painel de login do Fury: disponível em -> https://web.furycloud.io/login
+36. LinkedIn professor Douglas da digital House: -> https://www.linkedin.com/in/douglasmanicka/ 
+37. Versionamento semântico 2.0.0: disponível em -> https://semver.org/lang/pt-BR/
+38. Documentação de software: disponível em -> https://www.makeareadme.com/
+39. Serviço do fury de documentação: disponível em -> https://furydocs.io/documentation-service/1.1.1/guide/#/
+40. uml com visual diagram: disponível em -> https://online.visual-paradigm.com/drive/#diagramlist:proj=0&dashboard
+41. Ferramenta de documentação docsify: disponível em -> https://docsify.js.org/#/
+42. Ferramenta de documentação swagger: disponível em -> https://swagger.io/
+43. Projeto hexagony do professor Cyro no GitHub: disponível em -> https://github.com/cyruzin/hexagony/tree/master/internal/albums/repository
+44. Exemplo de código de teste unitário em Golang: disponível em -> https://medium.com/easyread/unit-test-sql-in-golang-5af19075e68e
+45. Link do projeto de revisão em Golang plataforma digitalhouse: disponível em -> https://github.com/cyruzin/meli-frescos/blob/main/internal/section/repository/mariadb/section_repository.go
+46. Exemplo de código expressão regular para go: disponível em -> https://www.golangprograms.com/regular-expression-to-extract-date-yyyy-mm-dd-from-string.htmlhttps://www.golangprograms.com/regular-expression-to-extract-date-yyyy-mm-dd-from-string.html
+47. Outro projeto do professor Cyro Tome: disponível em -> https://github.com/cyruzin/tome
+48. Entenda sobre consultas inter join, left join e right join em  mysql: disponível em -> https://www.todoespacoonline.com/w/2014/10/join-right-join-e-left-join/
+49. configuração de verificação do git arquivo pre-commit-config: disponivel em -> https://pre-commit.com/#install
+50.
+
+
+
+https://github.com/ashleymcnamara/giphers
 
 canal no slack de segurança da informação do meli: #help-websec-capacitaciones 
 grupo de segurança da informação no workplace: Ciberseguridad
@@ -78,10 +100,6 @@ Exemplo
 
 Parando a execução do middleware usamos a func do ginásio Aborted 
 
-
-
-
-
 Mapeamento de conhecimento aprendido em golang
 Sintaxes esplanadas pelo professor
 * Tipo de dados
@@ -94,12 +112,7 @@ Sintaxes esplanadas pelo professor
 * estrutura de dados
 * lista/ slices
 
-
-
-
-
 A aplicação será uma api para produtos frescos do mercado livre
-
 
 
 Trabalhando com teste em Golang
@@ -108,4 +121,5 @@ Trabalhando com teste em Golang
 
 
 
-
+App Guardian 
+Senha passphrase: sYcPVm?K-+
