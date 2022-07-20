@@ -1,8 +1,8 @@
-package introducao
+package mapping
 
 import "fmt"
 
-func Mapeamento() {
+func Mapeamento1() {
 	studentes := map[string]int{"joao": 20, "Pedro": 26}
 	fmt.Println(studentes["joao"])
 	studentes["Ana"] = 35

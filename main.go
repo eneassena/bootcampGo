@@ -1,7 +1,9 @@
 package main
 
-import "github.com/eneassena/bootcampGo/modulo3/exemplos"
+import (
+	"github.com/eneassena/bootcampGo/modulo1/introducao/mapping"
+)
 
 func main() {
-	exemplos.ShowJson()
+	mapping.Mapeamento7()
 }
