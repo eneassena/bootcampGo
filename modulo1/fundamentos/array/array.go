@@ -1,8 +1,8 @@
-package introducao
+package main
 
 import "fmt"
 
-func ArraySintaxe() {
+func main() {
 	var nomes [2]string
 	idades := make([]int, 2)
 
@@ -22,6 +22,6 @@ func ArraySintaxe() {
 	fmt.Println(nomes[0])
 	fmt.Println(nomes[1])
 
-	fmt.Printf("tamanho do array de idades %v")
+	fmt.Printf("tamanho do array de idades %v", 5)
 	fmt.Printf("tamanho do array de nomes")
 }

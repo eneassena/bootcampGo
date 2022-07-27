@@ -1,5 +1,5 @@
 package exemplos
-/*
+
 import (
 	"fmt"
 	"log"
@@ -50,7 +50,7 @@ import (
   
 	router := gin.Default()
   
-	router.GET("/", rootHandler)
+	router.GET("/", rootHandler1)
   
 	group := router.Group("/api/v1")
 	{
@@ -59,5 +59,3 @@ import (
   
 	router.Run()
   }
-
-  */

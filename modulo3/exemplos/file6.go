@@ -1,6 +1,5 @@
 package exemplos
 
-/*
 import (
   "log"
   "net/http"
@@ -51,5 +50,3 @@ func main() {
 
   router.Run()
 }
-
-*/

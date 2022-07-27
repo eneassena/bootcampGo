@@ -38,7 +38,7 @@ import (
 			definirá um "valor zero", para cada valor "non-error".
 			Os valores zero são por exemplo, uma string vazia
 			para string, "0" para inteiros, uma struct vazia para
-			tipos de estrutura e "nil" para tipos de ponteiro e
+			tipo-de-dados de estrutura e "nil" para tipo-de-dados de ponteiro e
 			interface, entre outros
 
 	Boas práticas:

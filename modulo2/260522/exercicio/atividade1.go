@@ -8,24 +8,28 @@ import (
 	"time"
 )
 
-
-
 const (
 	min = 1
 	max = 10000
 )
 
 type Cliente struct {
-	Arquivo          int `json:"arquivo"`
+	Arquivo          int    `json:"arquivo"`
 	Nome             string `json:"nome"`
 	Sobrenome        string `json:"sobrenome"`
-	RG               int `json:"rg"`
-	NumeroDeTelefone int `json:"numero_de_telefone"`
+	RG               int    `json:"rg"`
+	NumeroDeTelefone int    `json:"numero_de_telefone"`
 	Endereco         string `json:"endereco"`
 }
 
 func (c Cliente) campos() string {
-	dados := fmt.Sprintf("\n%d,%s,%s,%d,%d,%s", c.Arquivo, c.Nome, c.Sobrenome, c.RG, c.NumeroDeTelefone,c.Endereco)
+	dados := fmt.Sprintf("\n%d,%s,%s,%d,%d,%s",
+		c.Arquivo,
+		c.Nome,
+		c.Sobrenome,
+		c.RG,
+		c.NumeroDeTelefone,
+		c.Endereco)
 	return dados
 }
 
@@ -40,8 +44,8 @@ func header() string {
 }
 
 func leiaArquivo(caminho string) *os.File {
-	file, err := os.OpenFile(caminho, os.O_WRONLY|os.O_CREATE, 0600)
-	if err != nil { 
+	file, err := os.OpenFile(caminho, os.O_WRONLY|os.O_CREATE, 0o600)
+	if err != nil {
 		panic(fmt.Errorf("error: o arquivo não foi encontrado ou está danificado %w", err))
 	}
 	return file
@@ -57,9 +61,9 @@ func registerClientes(file *os.File, cliente []Cliente) error {
 	if len(cliente) == 0 {
 		defer Error()
 
-		panic(fmt.Errorf("error: o arquivo não foi encontrado ou está danificado"))  
+		panic(fmt.Errorf("error: o arquivo não foi encontrado ou está danificado"))
 	}
- 
+
 	defer file.Close()
 
 	if _, err := file.WriteString(header()); err != nil {
@@ -97,18 +101,18 @@ func ExecuteTarefa() {
 		Endereco:         "Rua A, casa, Numero 520",
 	})
 	clientes = append(clientes, Cliente{
-		Arquivo: geraID(),
-		Nome: "Carlos",
-		Sobrenome: "Silva",
-		RG: 12634625344,
+		Arquivo:          geraID(),
+		Nome:             "Carlos",
+		Sobrenome:        "Silva",
+		RG:               12634625344,
 		NumeroDeTelefone: 2346542344,
-		Endereco: "Rua C, Apartamento Bloco D, Porto segunro",
+		Endereco:         "Rua C, Apartamento Bloco D, Porto segunro",
 	})
- 	
+
 	if err := registerClientes(leiaArquivo("customers.txt"), clientes); err != nil {
 		log.Println("Falha no registro dos clientes")
 	}
-	
+
 	fmt.Println("Fim da execução")
 }
 

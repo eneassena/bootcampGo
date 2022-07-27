@@ -7,7 +7,7 @@ import "fmt"
 Exercício 2 - Produtos de e-commerce
 Diversas lojas de e-commerce precisam realizar funcionalidades no Go para gerenciar
 produtos e devolver o valor do preço total.
-As empresas têm 3 tipos de produtos:
+As empresas têm 3 tipo-de-dados de produtos:
 - Pequeno, Médio e Grande.
 Existem custos adicionais para manter o produto no armazém da loja e custos de envio.
 

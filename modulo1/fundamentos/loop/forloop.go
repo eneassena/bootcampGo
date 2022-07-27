@@ -1,4 +1,4 @@
-package introducao
+package loop
 
 import "fmt"
 

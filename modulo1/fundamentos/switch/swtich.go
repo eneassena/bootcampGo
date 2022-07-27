@@ -1,4 +1,4 @@
-package introducao
+package _switch
 
 import "fmt"
 
