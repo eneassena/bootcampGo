@@ -10,8 +10,8 @@ package exercicio
 	definido) que pode ser passado uma quantidade N de inteiros e retorne o cálculo que foi
 	indicado na função anterior
 	Exemplo:
-
 */
+
 const (
 	MINIMO = "Menor"
 	MAXIMO = "Maior"
