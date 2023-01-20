@@ -84,7 +84,7 @@ No framework gin temos 3 formas de implementar
  - router.User(meuMiddleware).GET("/endpoint", funcHandler) geralmente funciona para todos também
  - router.GET("/endpoint", meuMiddleware, funcHandler) para um endpoint especifico
 
-Mapeamento de conhecimento aprendido em golang
+main de conhecimento aprendido em golang
 
 Sintaxes esplanadas pelo professor
 * Tipo de dados

@@ -1,8 +1,9 @@
-package _switch
+package main
 
 import "fmt"
 
-func SwitchCase(dias int) {
+func main() {
+	dias := 5
 	switch dias {
 	case 1:
 		fmt.Println("Janeiro")
