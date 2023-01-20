@@ -1,4 +1,4 @@
-links
+### links
 1. Go Exemple uso de Contexto: disponivel em -> https://gobyexample.com/context
 2. Códigos HTTP: disonivel em -> https://http.dog/
 3. gestao de erros de servidor usando google: disponivel em -> https://cloud.google.com/error-reporting?hl=pt-br
@@ -51,32 +51,19 @@ links
 47. Outro projeto do professor Cyro Tome: disponível em -> https://github.com/cyruzin/tome
 48. Entenda sobre consultas inter join, left join e right join em  mysql: disponível em -> https://www.todoespacoonline.com/w/2014/10/join-right-join-e-left-join/
 49. configuração de verificação do git arquivo pre-commit-config: disponivel em -> https://pre-commit.com/#install
-50.
+50. como baixa video do youtube com python: disponivel em -> https://github.com/x4nth055/pythoncode-tutorials/tree/master/web-scraping/youtube-video-downloader
+51. Tutoriais de códigos em python: disponivel em -> https://www.thepythoncode.com/article/write-a-keylogger-python
 
 
+### Arquitetura MSR 
 
-https://github.com/ashleymcnamara/giphers
-
-canal no slack de segurança da informação do meli: #help-websec-capacitaciones 
-grupo de segurança da informação no workplace: Ciberseguridad
-
-uma estrutura pode ser vinculada a uma função que impementa uma interface  
-esstrutura -> função -> interface 
-
-o uso de interface permite reaproveitar código 
-
-
-
-Arquitetura MSR 
-
-Diretórios
+### Diretórios
 
 Cmd -> organiza códigos que irão responder as entrada da pai como controladores que responde uma um endpoint específico 
 Cmd/server
  - main.go
 Cmd/server/controller
  - aplicacaoController.go
-
 Internal -> camada responsável por organizar os códigos referênte a aplicação si, como regras de negocio, serviços internos da aplicação atual
 Internal/models
  - modelo.go
@@ -86,21 +73,19 @@ internal/repository
  - repository.go 
 
 
-Middleware
+### Middleware
 No framework gin temos 3 formas de implementar
 1. Podemos usar um middleware para todos endpoint
 2. Podemos usar um middlware em um grupo especifico de endpoints
 3. Podemos usar um middlware em im endpoint especifico
 
-Exemplo
+### Exemplo
  - router.User(meuMiddlware) para todos
  - router.User(meuMiddleware).GET("/endpoint", funcHandler) geralmente funciona para todos também
  - router.GET("/endpoint", meuMiddleware, funcHandler) para um endpoint especifico
 
-
-Parando a execução do middleware usamos a func do ginásio Aborted 
-
 Mapeamento de conhecimento aprendido em golang
+
 Sintaxes esplanadas pelo professor
 * Tipo de dados
 * variáveis
@@ -111,15 +96,3 @@ Sintaxes esplanadas pelo professor
 * interfaces
 * estrutura de dados
 * lista/ slices
-
-A aplicação será uma api para produtos frescos do mercado livre
-
-
-Trabalhando com teste em Golang
-
-
-
-
-
-App Guardian 
-Senha passphrase: sYcPVm?K-+
