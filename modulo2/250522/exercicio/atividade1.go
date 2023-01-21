@@ -1,4 +1,4 @@
-package tarefas
+package main
 
 import "fmt"
 
@@ -18,22 +18,22 @@ type Produto struct {
 }
 
 // função de Novo Produtos
-func novoProduto(nome string, preco int, quantidade int) Produto {
+func (u *Usuarios) novoProduto(nome string, preco int, quantidade int) Produto {
 	return Produto{Nome: nome, Preco: preco, Quantidade: quantidade}
 }
 
 // Função de adicionar produto
-func addProduto(user Usuarios, produto Produto) {
-	user.produtos = append(user.produtos, produto)
+func (u *Usuarios) addProduto(produto Produto) {
+	u.produtos = append(u.produtos, produto)
 }
 
 // função deletar produto
-func deleteProduto(user Usuarios) {
-	if len(user.produtos) == 0 {
+func (u *Usuarios) deleteProduto() {
+	if len(u.produtos) == 0 {
 		fmt.Println("Nao foi possive remover os produtos")
 	}
 	fmt.Println("Produto removido com sucesso")
-	user.produtos = []Produto{}
+	u.produtos = []Produto{}
 }
 
 func (u *Usuarios) setFullName(nome string, sobrenome string) {
@@ -53,18 +53,29 @@ func (u *Usuarios) setSenha(senha string) {
 	u.Senha = senha
 }
 
-func (u *Usuarios) show() string {
-	return fmt.Sprintf("Nome: %s\tSobrenome: %s\tIdade: %v\tEmail: %s\tSenha: %s\n",
+func (u *Usuarios) showUsuario() {
+	fmt.Printf("\nNome: %s\r\nSobrenome: %s\r\nIdade: %v\r\nEmail: %s\r\nSenha: %s\n",
 		u.Nome, u.Sobrenome, u.Idade, u.Email, u.Senha)
 }
 
-func Play() {
+func (u *Usuarios) showProduto() {
+	if len(u.produtos) > 0 {
+		fmt.Println("\nDados do Produto:")
+		for _, value := range u.produtos {
+			fmt.Printf("Nome: %s\tPreco: %v\tQuantidade: %v\n", value.Nome, value.Preco, value.Quantidade)
+		}
+	} else {
+		fmt.Println("Não há produtos para esse usuário")
+	}
+}
+
+func main() {
 	carlos := Usuarios{}
 	carlos.setFullName("Carlos", "Oliveira")
 	carlos.setEmail("carlosoliveira321@hotmail.com")
 	carlos.setIdade(45)
 	carlos.setSenha("SDFS_hj465413")
-	fmt.Println(carlos.show())
+	carlos.showUsuario()
 
 	marcelo := Usuarios{
 		Nome:      "Marcelo",
@@ -73,18 +84,20 @@ func Play() {
 		Email:     "marcelo@mail.com",
 		Senha:     "123456",
 	}
-	marcelo.show()
+	marcelo.showUsuario()
 
-	prod := novoProduto("Caderno", 65, 5)
-	addProduto(carlos, prod)
-	prod = novoProduto("Tablet", 500, 85)
-	addProduto(carlos, prod)
+	carlosProd := carlos.novoProduto("Caderno", 65, 5)
+	carlos.addProduto(carlosProd)
 
-	fmt.Println("Removendo produtos do carlos")
-	deleteProduto(carlos)
-	fmt.Println(carlos.produtos)
+	marceloProd := marcelo.novoProduto("Tablet", 500, 85)
+	marcelo.addProduto(marceloProd)
 
-	fmt.Println("Removendo produtos do marcelo")
-	deleteProduto(marcelo)
-	fmt.Println(marcelo.produtos)
+	carlos.showProduto()
+	marcelo.showProduto()
+
+	fmt.Println("\nRemovendo produtos do carlos")
+	carlos.deleteProduto()
+
+	fmt.Println("\nRemovendo produtos do marcelo")
+	marcelo.deleteProduto()
 }

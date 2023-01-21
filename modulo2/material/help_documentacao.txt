@@ -1,7 +1,0 @@
--- conteudo de pesquisa das aula
-links de ajuda de exemplo de codigo
-http://goporexemplo.golangbr.org/hello-world.html
-http://www.golangbootcamp.com/book/basics
-
-
-
