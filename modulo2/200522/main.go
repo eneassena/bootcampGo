@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/eneassena/bootcampGo/modulo2/200522/exercicio"
+	"github.com/eneassena/bootcampGo/modulo2/200522/exercicios"
 )
 
 func main() {
-	media, erro := exercicio.MediaAluno(7, 7, -7)
+	media, erro := exercicios.MediaAluno(7, 7, -7)
 	if erro != nil {
 		log.Println(erro.Error())
 	}
